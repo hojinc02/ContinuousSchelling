@@ -10,7 +10,7 @@ num_singular_groups = len(race_aliases)
 all_types = []
 for i in range(1, len(race_aliases)+1): 
     all_types.extend(combinations(list(range(len(race_aliases))), i))
-pkl_path = r'/home/hmchang/networkProject/PopulationData/DECENNIALPL2020.P1_2024-08-01T160402/data.pkl'
+pkl_path = f'PopulationData/DECENNIALPL2020.P1_2024-08-01T160402/data.pkl'
 
 def load_data(): 
     if not os.path.exists(pkl_path): 
@@ -20,7 +20,7 @@ def load_data():
         return pickle.load(pklfile)
 
 def save_data(): 
-    data_path = r'/home/hmchang/networkProject/PopulationData/DECENNIALPL2020.P1_2024-08-01T160402/DECENNIALPL2020.P1-Data.csv'
+    data_path = f'PopulationData/DECENNIALPL2020.P1_2024-08-01T160402/DECENNIALPL2020.P1-Data.csv'
     separator = ','
     labeldict = get_labeldata()
 
@@ -39,7 +39,7 @@ def save_data():
         pickle.dump(datadict, pklfile)
 
 def get_labeldata(): 
-    label_path = r'/home/hmchang/networkProject/PopulationData/DECENNIALPL2020.P1_2024-08-01T160402/DECENNIALPL2020.P1-Column-Metadata.csv'
+    label_path = f'PopulationData/DECENNIALPL2020.P1_2024-08-01T160402/DECENNIALPL2020.P1-Column-Metadata.csv'
 
     labeldata = pd.read_csv(label_path, skiprows=[0,1])
 
@@ -63,4 +63,4 @@ def get_labeldata():
 
 if __name__=='__main__': 
     data = save_data()
-    print(f'joe biden')
+    

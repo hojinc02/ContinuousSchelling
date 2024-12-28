@@ -21,7 +21,7 @@ pbuffer = 0.1
 random_start = True
 seed = None
 savedir = f'iters_{"randominit_" if random_start else "_"}F-{s_threshold:.3f}_sept24'
-basedir = '/home/hmchang/networkProject/'
+basedir = '.'
 os.makedirs(os.path.join(basedir, savedir), exist_ok=True)
 
 state_name = 'California'

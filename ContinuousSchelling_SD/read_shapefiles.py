@@ -2,15 +2,15 @@ import geopandas as gpd
 
 class Notes: 
     state_bg_filepaths = {
-        'Alabama': r'/home/hmchang/networkProject/Geopandas/shapefiles/alabama/tl_2020_01_bg.shp',
-        'California': r'/home/hmchang/networkProject/Geopandas/shapefiles/california/tl_2020_06_bg.shp'
+        'Alabama': f'Geopandas/shapefiles/alabama/tl_2020_01_bg.shp',
+        'California': f'Geopandas/shapefiles/california/tl_2020_06_bg.shp'
     }
 
     county_codes = {
         'San Diego': '06073'
     }
 
-    state_filepath= r'/home/hmchang/networkProject/Geopandas/shapefiles/states/tl_2020_us_state.shp'
+    state_filepath= f'Geopandas/shapefiles/states/tl_2020_us_state.shp'
 
 def load_bg(state_name, county=None): 
     

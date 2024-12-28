@@ -24,7 +24,7 @@ state_name = 'California'
 county_name = 'San Diego'
 blockgroups = load_bg(state_name, county_name)
 
-iters_path = r'/home/hmchang/networkProject/iters_sept18'
+iters_path = f'iters_sept18'
 file_names = os.listdir(iters_path)
 
 r_coords = {}
