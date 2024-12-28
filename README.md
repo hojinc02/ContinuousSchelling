@@ -1,3 +1,3 @@
 # SchellingSanDiego
 
-![sd_gif]<sd_gif.gif>
+![sd_gif](sd_gif.gif)
